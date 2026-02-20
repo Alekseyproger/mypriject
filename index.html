@@ -52,7 +52,7 @@ function pressed_btn(id) {
 
 
 
-fetch('mypriject/sentences.json')
+fetch('./mypriject/sentences.json')
 
 .then(response => {
 	if (!response.ok) throw new Error('sentences.json is fucked');
