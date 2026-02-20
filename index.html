@@ -52,8 +52,8 @@ function pressed_btn(id) {
 
 
 
-fetch('./dictionary_sutras-main/sentences.json')
-//fetch('./sentences.json')	
+//fetch('./dictionary_sutras-main/sentences.json')
+fetch('./sentences.json')	
 
 .then(response => {
 	if (!response.ok) throw new Error('sentences.json is fucked');
@@ -64,7 +64,8 @@ fetch('./dictionary_sutras-main/sentences.json')
 	const list = data;
 	console.log(Object.keys(data).length);
 	function get_a_line() {
-		return Math.round( ( Object.keys(data).length ) *Math.random());
+		//return Math.round( ( Object.keys(data).length ) *Math.random());
+		return Math.round( 25*Math.random());
 	};
 
 	line = get_a_line();
