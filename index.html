@@ -58,7 +58,7 @@ fetch('./sentences.json')
 
 .then(response => {
 	if (!response.ok) throw new Error('sentences.json is fucked');
-	console.log(response.json());
+	//console.log(response.json());
 	return response.json();
 })
 
