@@ -63,7 +63,7 @@ fetch('./dictionary_sutras-main/sentences.json')
 	const list = data;
 	console.log(Object.keys(data).length);
 	function get_a_line() {
-		return Math.round(50*Math.random());
+		return Math.round( ( Object.keys(data).length ) *Math.random());
 	};
 
 	line = get_a_line();
